@@ -12,7 +12,7 @@
 		
 		<!-- jQuery is required for the Trello JS library :\ -->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="https://api.trello.com/1/client.js?key=720ef2a8a7f410f9e7e4559528e0c7a9"></script>
+		<script type="text/javascript" src="https://api.trello.com/1/client.js?key=1f8851f412dc58b2eed7faf5b6d10aa7"></script>
 		
 		<script type="text/javascript">
 			var GROCERIES_BOARD_ID = 'uO26DySr',
@@ -96,29 +96,17 @@
 				
 				progressBar.value = 3;
 				
-				var xhr = new XMLHttpRequest();
-				xhr.open('GET', RECIPES_JSON_URL, true);
-				xhr.onreadystatechange = function () {
-					if (xhr.readyState === 4) {
-						if (xhr.status === 200) {
-							handleRecipesSuccess(xhr.responseText);
-						} else {
-							handleRecipesFailure(xhr);
-						}
-					}
-				};
-				xhr.send();
+				getRecipes()
+					.then(handleRecipesSuccess)
+					.catch(handleRecipesFailure);
 			}
-			function handleRecipesSuccess(recipesJSON) {
+			async function getRecipes() {
+				let recipesRes = await fetch(RECIPES_JSON_URL),
+					recipesJSON = await recipesRes.json();
+				return recipesJSON;
+			}
+			function handleRecipesSuccess(recipes) {
 				progressBar.value = 4;
-				
-				try {
-					recipes = JSON.parse(recipesJSON);
-				} catch (e) {
-					handleRecipesFailure(e);
-				}
-				
-				progressBar.value = 5;
 				
 				var list = document.getElementById('recipesList');
 				recipes.forEach(function (recipe) {
@@ -143,7 +131,7 @@
 					}
 				});
 				
-				progressBar.value = 6;
+				progressBar.value = 5;
 				
 				// Hide the progress bar.
 				document.getElementById('progressBar').style.display = 'none';
@@ -172,7 +160,7 @@
 		</style>
 	</head>
 	<body class="card z1">
-		<progress id="progressBar" min="0" max="6"></progress>
+		<progress id="progressBar" min="0" max="5"></progress>
 		<button class="z1" id="authBtn">Authenticate with Trello</button>
 		<ul id="recipesList"></ul>
 	</body>
