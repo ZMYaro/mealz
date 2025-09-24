@@ -1,115 +1,342 @@
-[
-	{
-		"title": "Apple Crisp",
-		"gdoc": "https://docs.google.com/document/d/1xr7qhE7lNyqC2_hile5nSt7b1uQrtrxQNdGvZdKXilw/edit",
-		"ingredients": [
-			"apples, fresh",
-			"lemon juice",
-			"cinnamon",
-			"nutmeg",
-			"sugar, white",
-			"sugar, brown",
-			"butter"
-		]
-	}, {
-		"title": "Cashew Chicken (Simplified)",
-		"gdoc": "https://docs.google.com/document/d/11xjXjto6Fo-9En7vmECPv7LiKe1CfxydtFdoMt3qwkc/edit",
-		"ingredients": [
-			"chicken breasts",
-			"corn starch",
-			"ginger",
-			"garlic",
-			"oil, vegetable",
-			"sauce, hoisin"
-		]
-	}, {
-		"title": "Macaroni & Cheese",
-		"gdoc": "https://docs.google.com/document/d/1usD6pGAt3b91oZOdS1dybiNr13AT_5Q_sWFBiMMx-mo/edit",
-		"ingredients": [
-			"macaroni",
-			"milk",
-			"salt",
-			"pepper, black",
-			"cheese, cheddar",
-			"eggs"
-		]
-	}, {
-		"title": "Matzah Brie",
-		"gdoc": "https://docs.google.com/document/d/1-kL7sF_KcwDSlILjQM0RJ8wEX1m-wFMgMOtEcznDJqw/edit",
-		"ingredients": [
-			"matzah",
-			"milk",
-			"salt",
-			"eggs"
-		]
-	}, {
-		"title": "Mongolian Beef (or other meat)",
-		"gdoc": "https://docs.google.com/document/d/1Stt1B_Avf3z1okDbXFRXROOqT-_xi4vD46jOuYWmzHE/edit",
-		"ingredients": [
-			"scallions",
-			"sauce, soy",
-			"ginger",
-			"garlic",
-			"pepper, red",
-			"corn starch",
-			"sugar, brown",
-			"oil, vegetable"
-		]
-	}, {
-		"title": "Orange Chicken",
-		"gdoc": "https://docs.google.com/document/d/1fzC5WqVJgI44CjngXHkHhLbYm3dm_D0awGQlXiGuMlM/edit",
-		"ingredients": [
-			"chicken breasts",
-			"salt",
-			"pepper, black",
-			"oil, olive",
-			"garlic",
-			"orange juice",
-			"honey",
-			"sauce, soy",
-			"vinegar, rice",
-			"corn starch",
-			"ginger",
-			"pepper, red"
-		]
-	}, {
-		"title": "Pan-Grilled Chicken",
-		"gdoc": "https://docs.google.com/document/d/1x6ABn2psfQCzhJtSiU7WkW70JHBFu42HJ3Sc0Ndkemo/edit",
-		"ingredients": [
-			"chicken breasts",
-			"oil, vegetable",
-			"salt",
-			"pepper, black",
-			"garlic powder"
-		]
-	}, {
-		"title": "Tuna Noodle Casserole",
-		"gdoc": "https://docs.google.com/document/d/1Gb-qPJ_y1xq9pF0hZ3wLk_qlvveu5GSeLGBSli8BRLs/edit",
-		"ingredients": [
-			"egg noodles",
-			"tuna, canned",
-			"soup, cream of mushroom"
-		]
-	}, {
-		"title": "Turkey Burgers",
-		"gdoc": "https://docs.google.com/document/d/1v7ySjrGEm5ylS90XhK63GwLaoJuO8EWDlToTvWdjOxc/edit",
-		"ingredients": [
-			"turkey, ground",
-			"sauce, soy",
-			"sauce, worcestershire"
-		]
-	}, {
-		"title": "Very Berry Pancakes",
-		"gdoc": "https://docs.google.com/document/d/14Fo5RC1UMQP2ROP-IXXMoN-1KeKRTUCNyZuhJAaKoPU/edit",
-		"ingredients": [
-			"eggs",
-			"milk",
-			"sugar, brown",
-			"oats",
-			"salt",
-			"flour, white",
-			"flour, whole wheat",
-			"baking powder"
-		]
-	}
-]
+{
+	"basics": [
+		{
+			"title": "Cheese Omelette",
+			"gdoc": "",
+			"ingredients": [
+				{ "name": "Eggs", "cardLink": "qo2ZLnrW" },
+				[
+					{ "name": "Cheese, cheddar", "cardLink": "XJq4B3H6" },
+					{ "name": "Cheese, cheddar, grated", "cardLink": "wPP9XvZ1" }
+				]
+			]
+		}, {
+			"title": "Egg & Cheese Sandwich",
+			"gdoc": "",
+			"ingredients": [
+				{ "name": "Eggs", "cardLink": "qo2ZLnrW" },
+				[
+					{ "name": "Cheese, cheddar", "cardLink": "XJq4B3H6" },
+					{ "name": "Cheese, cheddar, grated", "cardLink": "wPP9XvZ1" }
+				],
+				[
+					{ "name": "Bagels", "cardLink": "y3kJEnaM" },
+					{ "name": "Bread, multi-grain", "cardLink": "mh4XhFZz" }
+				]
+			]
+		}, {
+			"title": "Lox Sandwich",
+			"gdoc": "",
+			"ingredients": [
+				{ "name": "Lox", "cardLink": "A2eb7GFj" },
+				{ "name": "Cream cheese", "cardLink": "YnWdmLdk" },
+				[
+					{ "name": "Bagels", "cardLink": "y3kJEnaM" },
+					{ "name": "Bread, multi-grain", "cardLink": "mh4XhFZz" }
+				]
+			]
+		}, {
+			"title": "Peanut Butter & Jelly Sandwich",
+			"gdoc": "",
+			"ingredients": [
+				[
+					{ "name": "Peanut butter", "cardLink": "OrAAQwTj" },
+					{ "name": "Almond butter", "cardLink": "Cr7t2pDs" },
+					{ "name": "Soy butter", "cardLink": "pMvE815F" },
+					{ "name": "Sunflower butter", "cardLink": "wWHhcM7p" }
+				],
+				{ "name": "Jelly", "cardLink": "IolKMEUD" },
+				[
+					{ "name": "Bread, multi-grain", "cardLink": "mh4XhFZz" },
+					{ "name": "Bagels", "cardLink": "y3kJEnaM" }
+				]
+			]
+		}, {
+			"title": "Salad",
+			"gdoc": "",
+			"ingredients": [
+				[
+					{ "name": "Lettuce", "cardLink": "rrE8cfXZ" },
+					{ "name": "Kale", "cardLink": "owno0uon" }
+				],
+				[
+					{ "name": "Dressing, Caesar", "cardLink": "cBGmagwG" },
+					{ "name": "Dresing, Italian", "cardLink": "QetPRpH6" },
+					{ "name": "Dressing, Thai peanut", "cardLink": "8dUJJ8FK" }
+				]
+			]
+		}, {
+			"title": "Cheese & Crackers",
+			"gdoc": "",
+			"ingredients": [
+				{ "name": "Cheese, cheddar", "cardLink": "XJq4B3H6" },
+				[
+					{ "name": "Crackers, Triscuits (or similar)", "cardLink": "7IQJnyJU" },
+					{ "name": "Crackers, everything flatbread", "cardLink": "BVXMfzCH" }
+				]
+			]
+		}, {
+			"title": "Tuna Rice Bowl",
+			"gdoc": "https://docs.google.com/document/d/1pEzBZPuV2WX4GQB09GGuVKhz9Y5IUKstZwpV693GZYk/edit",
+			"ingredients": [
+				{ "name": "Rice, short grain (sushi)", "cardLink": "qwU8zyli" },
+				{ "name": "Tuna, canned", "cardLink": "hZ622ush" },
+				[
+					{ "name": "Mayonnaise", "cardLink": "sWctlO7V" },
+					{ "name": "Miracle Whip", "cardLink": "XPp4Yrxo" }
+				],
+				[
+					{ "name": "Sauce, General Tso's", "cardLink": "IRWxbjWk" },
+					{ "name": "Sauce, Hoisin", "cardLink": "wIyLqE0i" },
+					{ "name": "Sauce, soy", "cardLink": "yPQpOg9R" },
+					{ "name": "Sauce, teriyaki/soyaki", "cardLink": "71Fgk76q" }
+				]
+			]
+		}, {
+			"title": "Cereal",
+			"gdoc": "",
+			"ingredients": [
+				[
+					{ "name": "Milk, cow (refrigerated)", "cardLink": "GolVv143" },
+					{ "name": "Milk, cow (shelf-stable)", "cardLink": "YudbVEFU" },
+					{ "name": "Milk, soy", "cardLink": "34NnGf2Q" },
+					{ "name": "Milk, almond", "cardLink": "z73vHim7" }
+				],
+				[
+					{ "name": "Cereal - corn flakes", "cardLink": "cljoPYNE" },
+					{ "name": "Cereal - Cheerios", "cardLink": "Su6RMWzT" },
+					{ "name": "Cereal - GoLean Crisp (or similar)", "cardLink": "inGL0P1X" },
+					{ "name": "Cereal - Life (or similar)", "cardLink": "IPhsraOs" },
+					{ "name": "Cereal - oatmeal squares", "cardLink": "4d3rayXR" },
+					{ "name": "Cereal - peanut butter things", "cardLink": "8gY8ou8k" },
+					{ "name": "Cereal - raisin bran", "cardLink": "oiqSK6Yp" },
+					{ "name": "Cereal - shredded wheat", "cardLink": "3qdRZaME" },
+					{ "name": "Cereal - Special K Cinnamon Protein Crunch", "cardLink": "iBuUOSvq" },
+					{ "name": "Cereal - Very Berry Clusters", "cardLink": "WFbVSHg8" },
+					{ "name": "Cereal - wheat chex", "cardLink": "shmGD9fg" }
+				]
+			]
+		}, {
+			"title": "Gyoza",
+			"gdoc": "",
+			"ingredients": [
+				[
+					{ "name": "Gyoza, chicken", "cardLink": "Krp2GMdU" },
+					{ "name": "Gyoza, vegetable", "cardLink": "Le2uwb3u" }
+				]
+			]
+		}, {
+			"title": "Oatmeal",
+			"gdoc": "",
+			"ingredients": [
+				[
+					{ "name": "Milk, cow (refrigerated)", "cardLink": "GolVv143" },
+					{ "name": "Milk, cow (shelf-stable)", "cardLink": "YudbVEFU" },
+					{ "name": "Milk, soy", "cardLink": "34NnGf2Q" },
+					{ "name": "Milk, almond", "cardLink": "z73vHim7" },
+					{ "name": "Milk, powdered", "cardLink": "5EKc8GE5" }
+				],
+				[
+					{ "name": "Oats, quick", "cardLink": "UVKhL4GP" },
+					{ "name": "Oats, old fashioned", "cardLink": "kjZFOaTT" }
+				]
+			]
+		}, {
+			"title": "Pierogies",
+			"gdoc": "",
+			"ingredients": [
+				[
+					{ "name": "Pierogies", "cardLink": "v0o5hWDC" }
+				]
+			]
+		}, {
+			"title": "Pizza Bagel/Matzah Pizza",
+			"gdoc": "",
+			"ingredients": [
+				{ "name": "Cheese, mozzarella, grated", "cardLink": "XOIzstHh" },
+				{ "name": "Sauce, tomato", "cardLink": "smcLVTTp" },
+				[
+					{ "name": "Bagels", "cardLink": "y3kJEnaM" },
+					{ "name": "Matzah", "cardLink": "sJCwSREh" }
+				]
+			]
+		}
+	],
+	"lowerEffort": [
+		{
+			"title": "Macaroni & Cheese (baked)",
+			"gdoc": "https://docs.google.com/document/d/1usD6pGAt3b91oZOdS1dybiNr13AT_5Q_sWFBiMMx-mo/edit",
+			"ingredients": [
+				"macaroni",
+				"milk",
+				"salt",
+				"pepper, black",
+				"cheese, cheddar",
+				"eggs"
+			]
+		}, {
+			"title": "Matzah Brie",
+			"gdoc": "https://docs.google.com/document/d/1-kL7sF_KcwDSlILjQM0RJ8wEX1m-wFMgMOtEcznDJqw/edit",
+			"ingredients": [
+				"matzah",
+				"milk",
+				"salt",
+				"eggs"
+			]
+		}, {
+			"title": "Miso soup",
+			"gdoc": "",
+			"ingredients": [
+				{ "name": "Miso paste", "cardLink": "tyMcEggJ" },
+				{ "name": "Scallions", "cardLink": "YT3ScH6O" },
+				[
+					{ "name": "Tofu, soft", "cardLink": "sGBhQbbg" },
+					{ "name": "Tofu, firm", "cardLink": "pqKQof2g" }
+				]
+			]
+		}, {
+			"title": "Quick soup",
+			"gdoc": "",
+			"ingredients": [
+				{ "name": "Dashi, dry concentrated", "cardLink": "cS1hReot" },
+				{ "name": "Onions", "cardLink": "nMuFDb1Q" },
+				{ "name": "Scallions", "cardLink": "YT3ScH6O" },
+				[
+					{ "name": "Tofu, soft", "cardLink": "sGBhQbbg" },
+					{ "name": "Tofu, firm", "cardLink": "pqKQof2g" }
+				]
+			]
+		}, {
+			"title": "Quick stir fry",
+			"gdoc": "",
+			"ingredients": [
+				{ "name": "Onions", "cardLink": "nMuFDb1Q" },
+				{ "name": "Peppers, chopped, frozen", "cardLink": "WkfV0uvm" },
+				[
+					{ "name": "Chicken fingers", "cardLink": "MHZTICv9" },
+					{ "name": "Tofu, firm", "cardLink": "pqKQof2g" }
+				],
+				[
+					{ "name": "Sauce, General Tso's", "cardLink": "IRWxbjWk" },
+					{ "name": "Sauce, Hoisin", "cardLink": "wIyLqE0i" },
+					{ "name": "Sauce, soy", "cardLink": "yPQpOg9R" },
+					{ "name": "Sauce, teriyaki/soyaki", "cardLink": "71Fgk76q" }
+				]
+			]
+		}, {
+			"title": "Pan-Grilled Chicken",
+			"gdoc": "https://docs.google.com/document/d/1x6ABn2psfQCzhJtSiU7WkW70JHBFu42HJ3Sc0Ndkemo/edit",
+			"ingredients": [
+				"chicken breasts",
+				"oil, vegetable",
+				"salt",
+				"pepper, black",
+				"garlic powder"
+			]
+		}, {
+			"title": "Smoothie",
+			"gdoc": "",
+			"ingredients": [
+				[
+					{ "name": "Berries, mixed, frozen", "cardLink": "wJMhBBWh" },
+					{ "name": "Mango, frozen", "cardLink": "XXpouLk6" },
+					{ "name": "Raspberries, frozen", "cardLink": "E11ismEf" },
+					{ "name": "Strawberries, frozen", "cardLink": "6ne83bY2" }
+				],
+				[
+					{ "name": "Juice, pineapple", "cardLink": "lZ0InIEt" },
+					{ "name": "Juice, pomegranate", "cardLink": "rKWTyfgf" },
+					{ "name": "Juice, tart cherry", "cardLink": "cSXuPiWx" },
+					{ "name": "Yogurt, plain", "cardLink": "uifEata2" },
+					{ "name": "Yogurt, vanilla", "cardLink": "5XclkcHB" },
+					{ "name": "Yogurt, single-serving fruit", "cardLink": "TRJFGyka" }
+				]
+			]
+		}, {
+			"title": "Tuna Noodle Casserole",
+			"gdoc": "https://docs.google.com/document/d/1Gb-qPJ_y1xq9pF0hZ3wLk_qlvveu5GSeLGBSli8BRLs/edit",
+			"ingredients": [
+				"egg noodles",
+				"tuna, canned",
+				"soup, cream of mushroom"
+			]
+		}, {
+			"title": "Very Berry Pancakes",
+			"gdoc": "https://docs.google.com/document/d/14Fo5RC1UMQP2ROP-IXXMoN-1KeKRTUCNyZuhJAaKoPU/edit",
+			"ingredients": [
+				"eggs",
+				"milk",
+				"sugar, brown",
+				"oats",
+				"salt",
+				"flour, white",
+				"flour, whole wheat",
+				"baking powder"
+			]
+		}
+	],
+	"higherEffort": [
+		{
+			"title": "Apple Crisp",
+			"gdoc": "https://docs.google.com/document/d/1xr7qhE7lNyqC2_hile5nSt7b1uQrtrxQNdGvZdKXilw/edit",
+			"ingredients": [
+				{ "name": "Apples, fresh", "cardLink": "J7CH19PK" },
+				"lemon juice",
+				"cinnamon",
+				"nutmeg",
+				"sugar, white",
+				"sugar, brown",
+				"butter"
+			]
+		}, {
+			"title": "Cashew Chicken (Simplified)",
+			"gdoc": "https://docs.google.com/document/d/11xjXjto6Fo-9En7vmECPv7LiKe1CfxydtFdoMt3qwkc/edit",
+			"ingredients": [
+				"chicken breasts",
+				"corn starch",
+				"ginger",
+				"garlic",
+				"oil, vegetable",
+				"sauce, hoisin"
+			]
+		}, {
+			"title": "Mongolian Beef (or other meat)",
+			"gdoc": "https://docs.google.com/document/d/1Stt1B_Avf3z1okDbXFRXROOqT-_xi4vD46jOuYWmzHE/edit",
+			"ingredients": [
+				"scallions",
+				"sauce, soy",
+				"ginger",
+				"garlic",
+				"pepper, red",
+				"corn starch",
+				"sugar, brown",
+				"oil, vegetable"
+			]
+		}, {
+			"title": "Orange Chicken",
+			"gdoc": "https://docs.google.com/document/d/1fzC5WqVJgI44CjngXHkHhLbYm3dm_D0awGQlXiGuMlM/edit",
+			"ingredients": [
+				"chicken breasts",
+				"salt",
+				"pepper, black",
+				"oil, olive",
+				"garlic",
+				"orange juice",
+				"honey",
+				"sauce, soy",
+				"vinegar, rice",
+				"corn starch",
+				"ginger",
+				"pepper, red"
+			]
+		}, {
+			"title": "Turkey Burgers",
+			"gdoc": "https://docs.google.com/document/d/1v7ySjrGEm5ylS90XhK63GwLaoJuO8EWDlToTvWdjOxc/edit",
+			"ingredients": [
+				"turkey, ground",
+				"sauce, soy",
+				"sauce, worcestershire"
+			]
+		}
+	]
+}

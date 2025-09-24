@@ -90,7 +90,7 @@
 				
 				items.forEach(function (item) {
 					if (INGREDIENT_LIST_IDS.indexOf(item.idList) !== -1) {
-						ingredients.push(item.name.toLowerCase());
+						ingredients.push(item.shortLink);
 					}
 				});
 				
@@ -109,32 +109,65 @@
 				progressBar.value = 4;
 				
 				var list = document.getElementById('recipesList');
-				recipes.forEach(function (recipe) {
-					var canMake = true;
-					recipe.ingredients.forEach(function (ingredient) {
-						if (ingredients.indexOf(ingredient) === -1) {
-							canMake = false;
+				for (let [categoryName, categoryRecipes] of Object.entries(recipes)) {
+					
+					appendCategoryHeading(categoryName, list);
+					
+					for (let recipe of categoryRecipes) {
+						if (canMakeRecipe(recipe)) {
+							appendRecipe(recipe, list);
 						}
-					});
-					if (canMake) {
-						var newItem = document.createElement('li');
-						if (recipe.gdoc) {
-							var newLink = document.createElement('a');
-							newLink.textContent = recipe.title;
-							newLink.href = recipe.gdoc;
-							newLink.target = '_blank';
-							newItem.appendChild(newLink);
-						} else {
-							newItem.textContent = recipe.title;
-						}
-						list.appendChild(newItem);
 					}
-				});
+				}
 				
 				progressBar.value = 5;
 				
 				// Hide the progress bar.
 				document.getElementById('progressBar').style.display = 'none';
+			}
+			
+			function canMakeRecipe(recipe) {
+				for (let ingredient of recipe.ingredients) {
+					if (!Array.isArray(ingredient)) {
+						if (!ingredients.includes(ingredient.cardLink)) {
+							return false;
+						}
+						continue;
+					} else {
+						let hasIngredient = false;
+						for (let ingredientVariant of ingredient) {
+							if (ingredients.includes(ingredientVariant.cardLink)) {
+								hasIngredient = true;
+							}
+						}
+						if (!hasIngredient) {
+							return false;
+						}
+					}
+				}
+				return true;
+			}
+			
+			function appendCategoryHeading(categoryName, list) {
+				let newItem = document.createElement('li'),
+					newHeading = document.createElement('h2');
+				newHeading.textContent = categoryName;
+				newItem.appendChild(newHeading);
+				list.appendChild(newItem);
+			}
+			
+			function appendRecipe(recipe, list) {
+				let newItem = document.createElement('li');
+				if (recipe.gdoc) {
+					let newLink = document.createElement('a');
+					newLink.textContent = recipe.title;
+					newLink.href = recipe.gdoc;
+					newLink.target = '_blank';
+					newItem.appendChild(newLink);
+				} else {
+					newItem.textContent = recipe.title;
+				}
+				list.appendChild(newItem);
 			}
 		</script>
 		<style type="text/css">
@@ -156,12 +189,16 @@
 			#recipesList {
 				margin: auto;
 				text-align: left;
+				
+				li:has(h2) {
+					list-style-type: none;
+				}
 			}
 		</style>
 	</head>
 	<body class="card z1">
 		<progress id="progressBar" min="0" max="5"></progress>
-		<button class="z1" id="authBtn">Authenticate with Trello</button>
+		<button type="button" class="z1" id="authBtn">Authenticate with Trello</button>
 		<ul id="recipesList"></ul>
 	</body>
 </html>
